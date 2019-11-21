@@ -2,9 +2,9 @@
 
 The Hacking Project - session 10 - semaine 8
 
-> Mode d'emploi:
+    Mode d'emploi:
 
-Soit cloner dans le terminal soit tapez les commandes :
+Soit cloner dans le terminal soit tapez télécharger de github :
 
     $ git clone https://github.com/Dstrasbg/39_gmail-like
 
@@ -24,9 +24,10 @@ Soit cloner dans le terminal soit tapez les commandes :
     http://localhost:3000/
 
 
-> Sur Heroku:
+Sur Heroku:
 
 https://
 
 
-Novembre 2019
+
+>Novembre 2019
