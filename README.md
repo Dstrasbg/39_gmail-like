@@ -2,21 +2,23 @@
 
 The Hacking Project - session 10 - semaine 8
 
-    Mode d'emploi:
+Mode d'emploi:
 
-Soit cloner dans le terminal soit tapez télécharger de github :
+Soit cloner dans le terminal soit télécharger de github :
 
     $ git clone https://github.com/Dstrasbg/39_gmail-like
 
-    bundle install
+Faire:
 
-    rails db:create
+    $ bundle install
 
-    rails db:migrate
+    $ rails db:create
 
-    rails db:seed
+    $ rails db:migrate
 
-    rails server
+    $ rails db:seed
+
+    $ rails s
 
  
  Puis saisir l'URL dans le navigateur:
