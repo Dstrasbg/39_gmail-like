@@ -1,0 +1,35 @@
+<h1 class="text-center"><strong>Emails</strong></h1>
+<br>
+<div class=text-center>
+    <div>
+      <%= button_to "Recevoir un email", email_index_path, method: :post, remote: true, :class => "btn-primary" %>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2 class="text-center"><u>Objet</u></h2>
+        <br><hr>
+        <ul id="objects-list">
+          <% @emails.each do |email| %>
+            <h6 id="object-<%= email.id %>">
+              <% if email.read === false %>
+                <%= link_to "#{email.object}", email_path(email.id), remote: true %>
+              <% else %>
+                <%= link_to "#{email.object}", email_path(email.id), remote: true, :class => "text-dark" %>
+              <% end %>
+              <hr>
+            </h6>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <h2 class="text-center"><u>Contenu</u></h2>
+        <br><hr>
+        <div id="email-content">
+        </div>
+      </div>
+    </div>
+  </div>

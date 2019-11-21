@@ -1,0 +1,25 @@
+<div id="content-<%= email.id %>">
+  <h2 class="text-center">
+    <%= email.object %>
+  </h2>
+    <hr><br><br><br>
+  <p>
+    <%= email.body %>
+  </p>
+  <br><br><br>
+  <div class="row">
+    <% if email.read === true %>
+      <div id="read-btn" class="col-sm">
+        <%= button_to "Marquer comme non-lu", email_path(email.id), method: :put, :class => "text-light col-sm btn-info", remote: true %>
+      </div>
+    <% else %>
+      <div id="read-btn" class="col-sm">
+        <%= button_to "Marquer comme lu", email_path(email.id), method: :put, :class => "text-light col-sm btn-success", remote: true %>
+      </div>
+    <% end %>
+    <div class="col-sm">
+      <%= button_to "Supprimer le mail", email_path(email.id), method: :delete, :class => "text-light col-sm btn-danger", remote: true %>
+    </div>
+  </div>
+
+</div>
