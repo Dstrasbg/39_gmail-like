@@ -5,8 +5,8 @@ class EmailController < ApplicationController
     
       def create
         @email = Email.new
-        @email.object = Faker::Company.industry
-        @email.body = Faker::ChuckNorris.fact
+        @email.object = Faker::BackToTheFuture.character
+        @email.body = Faker::StarWars.quote        
         @email.save
         if @email.save
           respond_to do |format|
