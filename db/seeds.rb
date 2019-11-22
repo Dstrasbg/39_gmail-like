@@ -20,3 +20,5 @@ require 'faker'
 end
 
 puts "5 emails ont été créés :"
+
+tp Email.all, :object, :body
